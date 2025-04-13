@@ -77,7 +77,7 @@ git tag v1.0
 ```bash
 git checkout v1.0
 ```
-### git和github的绑定，上述的基本指令都是在围绕本地的项目和git仓库而言的，但git好用的地方在于还有github这样一个管理代码的平台，因此git和github的绑定也很重要
+## git和github的绑定，上述的基本指令都是在围绕本地的项目和git仓库而言的，但git好用的地方在于还有github这样一个管理代码的平台，因此git和github的绑定也很重要
 
 * 目前github支持的连接方式包括https和ssh，在这里我们选择ssh的安全协议向github提交代码和从github下载代码
 
