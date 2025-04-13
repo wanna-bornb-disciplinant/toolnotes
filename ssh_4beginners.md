@@ -46,3 +46,69 @@
 * 还有一个在当时比较困扰笔者的问题：当我在服务器上生成密钥文件时，是针对于单个用户的，因此我把这个密钥对中的私钥发给客户机时，客户机也只能登录对应的用户，使用对应的用户权限，但使用主流的SSH登录方案，密钥对是客户机生成的，这样岂不是就不能选择对应的用户了吗？
   
   思考并实践后的回答是：密钥对和用户本身没有实际关系，但仔细思考服务器每个用户的文件中都会有一个SSH专属的文件夹，当中保存着密钥和authorized_keys等内容，因此，只需要在发送公钥文件时指定B端接收的用户，那么SSH登录后只会连接到接收公钥文件的那个用户
+
+## 关于客户机+跳板机+服务器这样的SSH配置下的基础连接方案
+
+* 假设当前的三机结构如下：
+  ```markdown
+    客户机（公网） ──SSH──▶ 跳板机（公网IP: 1.2.3.4）
+                              │
+                              └─SSH──▶ 目标服务器（内网IP: 192.168.0.100）
+  ```
+  客户机登录跳板机用用户：```user_jump```
+
+  跳板机登录目标服务器用用户：```user_target```
+
+* 基于ProxyJump的方式进行ssh连接可以达到的效果是：
+  ```bash
+  ssh -J user_jump@1.2.3.4 user_target@192.168.0.100
+  ```
+  通过两次SSH连接通过跳板机连接至服务器
+
+* 首先在客户机上的操作就是生成SSH密钥对，将公钥文件发送至跳板机和服务器中：
+  ```bash
+  ssh-copy-id user_jump@1.2.3.4
+  ssh user_jump@1.2.3.4
+  ssh-copy-id user_target@192.168.0.100
+  ```
+
+  在本地配置```~/.ssh/config```文件：
+  ```bash
+  Host jump
+    HostName 1.2.3.4
+    User user_jump
+    IdentityFile ~/.ssh/id_rsa
+
+  Host target
+    HostName 192.168.0.100
+    User user_target
+    IdentityFile ~/.ssh/id_rsa
+    ProxyJump jump
+  ```
+
+* 其余的必要操作只需保证跳板机能ping或ssh连接至服务器即可，总结基础的三机连接如下：
+  ```markdown
+  [客户机]
+  ├── ~/.ssh/id_rsa / id_rsa.pub
+  ├── ~/.ssh/config:
+  │   - Host jump
+  │   - Host target (ProxyJump jump)
+
+        │
+        ▼
+
+  [跳板机]
+  ├── user_jump 用户存在
+  ├── ~/.ssh/authorized_keys 中包含 客户机的 id_rsa.pub
+  ├── 能访问目标服务器（ping/ssh）
+
+        │
+        ▼
+
+  [目标服务器]
+  ├── user_target 用户存在
+  ├── ~/.ssh/authorized_keys 中包含 客户机的 id_rsa.pub
+
+  ```
+
+* 跳板机上建议开启 UFW、防火墙、Fail2Ban
