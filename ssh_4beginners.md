@@ -35,7 +35,7 @@
     else {
         & cat "$publicKey" | ssh $args $userAtMachine "umask 077; test -d .ssh || mkdir .ssh ; cat >> .ssh/authorized_keys || exit 1"      
     }
-}
+  }
   ```
 
 * 在完成前面的两个操作之后，此后就可以使用ssh命令登录至指定服务器：
