@@ -25,6 +25,19 @@
   ```
   这句指令的本质是一个脚本，它通过SSH协议登录到B端，并执行：使用cat等命令将本地公钥发送至B端，将公钥内容追加至B端的```authorized_keys```中
 
+  如果使用的是Windows系统，会出现“ssh-copy-id命令不存在”的情况。打开powershell，输入如下脚本后，在执行上述ssh-copy-id命令。
+  ```bash
+  function ssh-copy-id([string]$userAtMachine, $args){   
+    $publicKey = "$ENV:USERPROFILE" + "/.ssh/id_rsa.pub"
+    if (!(Test-Path "$publicKey")){
+        Write-Error "ERROR: failed to open ID file '$publicKey': No such file"            
+    }
+    else {
+        & cat "$publicKey" | ssh $args $userAtMachine "umask 077; test -d .ssh || mkdir .ssh ; cat >> .ssh/authorized_keys || exit 1"      
+    }
+  }
+  ```
+
 * 在完成前面的两个操作之后，此后就可以使用ssh命令登录至指定服务器：
   ```bash
   ssh username@server_ip
