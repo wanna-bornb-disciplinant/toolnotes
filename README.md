@@ -1,2 +1,108 @@
-# toolnotes
+# Tool Notes & Guides 🛠️
+
 A curated collection of personal notes and guides on various tools and software. Written in Markdown for quick reference and sharing.
+
+---
+
+## 🌟 About
+
+This repository is a personal knowledge base for tool/software usage notes and step-by-step guides. The goal is to:
+- Avoid repeating "relearning" costs by documenting practical experiences
+- Provide concise, actionable guides instead of lengthy official docs
+- Share reliable solutions to common pitfalls
+- Keep content updated with tool version iterations
+
+All notes are written in plain Markdown for cross-platform compatibility and easy editing. Feel free to star ⭐ the repo for future reference!
+
+---
+
+## 📚 Covered Tools & Software
+
+### Development Tools
+- Git & GitHub (commit规范、branch管理、PR流程)
+- VS Code (插件推荐、快捷键、自定义配置)
+- Docker & Docker Compose (容器部署、常用命令)
+- Terminal (Linux/macOS 常用命令、Shell 脚本技巧)
+- IDEs (IntelliJ IDEA、PyCharm 高效用法)
+
+### Productivity Tools
+- Notion (数据库搭建、模板使用、快捷键)
+- Obsidian (双向链接、插件配置、知识管理)
+- Excel / WPS (函数技巧、数据可视化、批量操作)
+- Todoist / TickTick (任务管理、自动化流)
+- 截图/录屏工具 (Snipaste、OBS Studio 基础用法)
+
+### Design & Creation
+- Figma (组件库、协作技巧、快捷键)
+- Canva (模板复用、高效设计流程)
+- 剪映 (视频剪辑、字幕添加、导出设置)
+- Markdown 进阶 (公式、图表、排版技巧)
+
+### Other Utilities
+- 文件格式转换工具 (PDF ↔ Word、图片压缩)
+- 云存储工具 (Google Drive、阿里云盘 高效用法)
+- 密码管理工具 (Bitwarden 配置与同步)
+
+> See the [directory](docs/) for the full list of notes.
+
+---
+
+## 📖 How to Use
+
+### 1. Online Browsing
+- Navigate to the [docs/](docs/) folder to find tool-specific notes
+- Use GitHub's built-in "Find file" (Ctrl+F) to search for keywords (e.g., "VS Code 插件")
+- Click on any `.md` file to view the content directly on GitHub
+
+### 2. Offline Access
+- Clone the repository to your local machine:
+  ```bash
+  git clone https://github.com/your-username/tool-notes.git
+  ```
+- Open the `docs/` folder with a Markdown editor (e.g., Typora、Obsidian、VS Code + Markdown All in One)
+- Enable offline search in your editor for faster access
+
+---
+
+## 📋 Content Structure
+
+All guides follow a unified format for consistency:
+1. **Tool Overview** → Core functions +适用场景
+2. **Installation & Setup** → Step-by-step installation + 关键配置
+3. **Core Usage** → 高频操作 + 快捷键 + 实用技巧
+4. **Common Pitfalls** → 避坑指南 + 解决方案
+5. **Useful Resources** → 官方文档、推荐教程、插件链接
+
+> Example: See [VS Code Guide](docs/development/vs-code-guide.md) for a complete demo.
+
+---
+
+## 🤝 Contribution
+
+Contributions are welcome! Whether you want to fix a typo, add a new tool guide, or update outdated content:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Make your changes (follow the [content structure](#-content-structure))
+4. Commit your changes (`git commit -m "Add: XXX guide / Fix: XXX issue"`)
+5. Push to the branch (`git push origin feature/your-feature`)
+6. Open a Pull Request (PR) with a clear description of your changes
+
+### Guidelines
+- Keep content concise (focus on practicality, not completeness)
+- Use consistent Markdown formatting (follow existing notes)
+- For new tools, place the file in the corresponding subfolder under `docs/`
+- Update the [Table of Contents](docs/SUMMARY.md) if adding a new guide
+
+---
+
+## 📄 License
+
+This repository is licensed under the [MIT License](LICENSE). You are free to:
+- Use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software
+- Provide the software with attribution
+
+---
+
+> Last Updated: 2025-11-07  
+> Star ⭐ this repo if it helps you! Thanks for visiting~
