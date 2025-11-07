@@ -74,7 +74,7 @@ Contributions are welcome! Whether you want to fix a typo, add a new tool guide,
 - Keep content concise (focus on practicality, not completeness)
 - Use consistent Markdown formatting (follow existing notes)
 - For new tools, place the file in the corresponding subfolder under `docs/`
-- Update the [Table of Contents](docs/SUMMARY.md) if adding a new guide
+- Update the [Table of Contents](SUMMARY.md) if adding a new guide
 
 ---
 
