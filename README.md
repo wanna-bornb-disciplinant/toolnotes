@@ -58,8 +58,8 @@ All notes are written in plain Markdown for cross-platform compatibility and eas
 ## 📋 Content Structure
 
 All guides follow a unified format for consistency:
-1. **Tool Overview** → Core functions +适用场景
-2. **Installation & Setup** → Step-by-step installation + 关键配置
+1. **Tool Overview** → Core function +适用场景
+2. **Installation & Setup** → 从头安装 + 关键配置
 3. **Core Usage** → 高频操作 + 快捷键 + 实用技巧
 4. **Common Pitfalls** → 避坑指南 + 解决方案
 5. **Useful Resources** → 官方文档、推荐教程、插件链接
