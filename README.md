@@ -1,12 +1,12 @@
 # Tool Notes & Guides 🛠️
 
-A curated collection of personal notes and guides on various tools and software. Written in Markdown for quick reference and sharing.
+A curated collection of personal notes and guides on various tools and module. Written in Markdown for quick reference and sharing.
 
 ---
 
 ## 🌟 About
 
-This repository is a personal knowledge base for tool/software usage notes and step-by-step guides. The goal is to:
+This repository is a personal knowledge base for tool/module usage notes and step-by-step guides. The goal is to:
 - Avoid repeating "relearning" costs by documenting practical experiences
 - Provide concise, actionable guides instead of lengthy official docs
 - Share reliable solutions to common pitfalls
@@ -16,7 +16,7 @@ All notes are written in plain Markdown for cross-platform compatibility and eas
 
 ---
 
-## 📚 Covered Tools & Software
+## 📚 Covered Tools & Modules
 
 ### Development Tools
 - Git & GitHub (commit规范、branch管理、PR流程)
@@ -55,7 +55,7 @@ All guides follow a unified format for consistency:
 4. **Common Pitfalls** → 避坑指南 + 解决方案
 5. **Useful Resources** → 官方文档、推荐教程、插件链接
 
-> Example: See [VS Code Guide](docs/development/vs-code-guide.md) for a complete demo.
+> Example: See [VS Code Guide](docs/editor/vs-code-guide.md) for a complete demo.
 
 ---
 
@@ -65,7 +65,7 @@ Contributions are welcome! Whether you want to fix a typo, add a new tool guide,
 
 1. Fork the repository
 2. Create a new branch (`git checkout -b feature/your-feature`)
-3. Make your changes (follow the [content structure](#-content-structure))
+3. Make your changes 
 4. Commit your changes (`git commit -m "Add: XXX guide / Fix: XXX issue"`)
 5. Push to the branch (`git push origin feature/your-feature`)
 6. Open a Pull Request (PR) with a clear description of your changes
