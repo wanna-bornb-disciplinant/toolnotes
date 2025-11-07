@@ -80,7 +80,7 @@ Contributions are welcome! Whether you want to fix a typo, add a new tool guide,
 
 ## 📄 License
 
-This repository is licensed under the [MIT License](LICENSE). You are free to:
+This repository is licensed under the [Apache License 2.0](LICENSE). You are free to:
 - Use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software
 - Provide the software with attribution
 
