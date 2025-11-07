@@ -34,7 +34,7 @@ All notes are written in plain Markdown for cross-platform compatibility and eas
 - CMD
 - ...
 
-> See the [directory](docs/) for the full list of notes.
+> See the [Table of Contents](SUMMARY.md) or [directory](docs/) for the full list of notes.
 
 ---
 
