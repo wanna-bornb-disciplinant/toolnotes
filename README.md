@@ -25,24 +25,6 @@ All notes are written in plain Markdown for cross-platform compatibility and eas
 - Terminal (Linux/macOS 常用命令、Shell 脚本技巧)
 - IDEs (IntelliJ IDEA、PyCharm 高效用法)
 
-### Productivity Tools
-- Notion (数据库搭建、模板使用、快捷键)
-- Obsidian (双向链接、插件配置、知识管理)
-- Excel / WPS (函数技巧、数据可视化、批量操作)
-- Todoist / TickTick (任务管理、自动化流)
-- 截图/录屏工具 (Snipaste、OBS Studio 基础用法)
-
-### Design & Creation
-- Figma (组件库、协作技巧、快捷键)
-- Canva (模板复用、高效设计流程)
-- 剪映 (视频剪辑、字幕添加、导出设置)
-- Markdown 进阶 (公式、图表、排版技巧)
-
-### Other Utilities
-- 文件格式转换工具 (PDF ↔ Word、图片压缩)
-- 云存储工具 (Google Drive、阿里云盘 高效用法)
-- 密码管理工具 (Bitwarden 配置与同步)
-
 > See the [directory](docs/) for the full list of notes.
 
 ---
