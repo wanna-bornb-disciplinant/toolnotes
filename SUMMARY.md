@@ -18,7 +18,17 @@ A complete index of all tools and modules documented in this repository. Organiz
 ## 🛠️ System Administration Tools
 | Tool/Module               | Description                                  | File Path                                  |
 |---------------------------|----------------------------------------------|--------------------------------------------|
-| SSH(Secure Shell)         | Common commands                              | [docs/sysadmin/ssh-guide.md](docs/sysadmin/ssh-guide.md) |
+| SSH(Secure Shell)         | Remote connection, key authentication, port forwarding & secure file transfer | [docs/sysadmin/ssh-guide.md](docs/sysadmin/ssh-guide.md) |
+
+---
+
+## 🛠️ Shell Environments & Usage Tips
+| Tool/Module               | Description                                  | File Path                                  |
+|---------------------------|----------------------------------------------|--------------------------------------------|
+| Bash                      | Advanced built-in commands (grep/awk/sed), pipelines, scripting & aliases   | [docs/shell/bash-guide.md](docs/shell/bash-guide.md) |
+| PowerShell                | Cmdlets usage, object-oriented pipelines, scripting, cross-platform support | [docs/shell/powershell-guide.md](docs/shell/powershell-guide.md) |
+| CMD                       | Basic commands, batch scripting, system config & PowerShell compatibility   | [docs/shell/cmd-guide.md](docs/shell/cmd-guide.md) |
+
 
 
 
