@@ -28,6 +28,13 @@ All notes are written in plain Markdown for cross-platform compatibility and eas
 - SSH （远程连接、密钥认证、端口转发、安全文件传输）
 - ...
 
+### Useful Third-party Libraries in Python
+- logging/loguru
+- argparse
+- gin
+- wandb
+- ...
+
 ### Shell Environments & Usage Tips
 - Bash
 - PowerShell
