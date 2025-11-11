@@ -15,6 +15,15 @@ A complete index of all tools and modules documented in this repository. Organiz
 
 ---
 
+## 🛠️ Useful Third-party Libraries in Python
+| Tool/Module               | Description                                  | File Path                                  |
+|---------------------------|----------------------------------------------|--------------------------------------------|
+| argparse+gin+loguru       | Command-line runtime control, structured config, logging | [docs/py-library/argparse-gin-loguru-guide.md](docs/py-library/argparse-gin-loguru-guide.md) |
+| wandb                     | Experiment tracking, visualization & reproducibility     | [docs/py-library/wandb-guide.md](docs/py-library/wandb-guide.md) |
+
+
+---
+
 ## 🛠️ System Administration Tools
 | Tool/Module               | Description                                  | File Path                                  |
 |---------------------------|----------------------------------------------|--------------------------------------------|
