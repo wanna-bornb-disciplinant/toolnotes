@@ -149,7 +149,7 @@
     # 配置 2 个输出目标：① 终端 ② 文件（带滚动+压缩+保留）
     logger.add(
         sink=sys.stderr,  # 输出到终端（默认已开启，这里可自定义格式）
-        format="{time:YYYY-MM-DD HH:mm:ss} | {level: <8} | {module}:{line} | {message}",
+        format="{time:YYYY-MM-DD HH:mm:ss} | {level: <8} | {module}:{name}:{line} | {message}",
         level="INFO"  # 终端只输出 INFO 及以上（避免 DEBUG 刷屏）
     ).add(
         sink="./logs/train_{time:YYYYMMDD}.log",  # 输出到文件（文件名带日期）
@@ -168,7 +168,7 @@
     logger.error("数据增强失败：图片路径不存在")
   ```
 
-- 三个库如何配合使用的一个示例：
+- 三个库如何配合使用的一个示例(这里的示例使用了wandb可视化一些配置和训练的效果)：
   ```bash
     pip install wandb
     wandb login
