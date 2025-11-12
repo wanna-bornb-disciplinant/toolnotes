@@ -4,7 +4,10 @@
 - ``loguru``的核心优势是API极简、配置零冗余，所有日志操作都围绕logger实例展开（无需像logging那样创建Logger、Handler、Formatter等一堆对象）
 
 ## Installation & Setup
-- 从头安装 + 关键配置
+- 安装gin的正确bash命令为：
+  ```bash
+    pip install gin-config
+  ```
 
 ## Core Usage
 - 单独使用``argparse``的简单说明：
