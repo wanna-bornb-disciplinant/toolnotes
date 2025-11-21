@@ -13,7 +13,10 @@
 - wandb管理实验和项目的单位是``team``和``project``
 
 ## Core Usage
-- 这里的用法讲解参照
+- 这里的用法讲解参照[Wandb_Tutorial](https://github.com/OpenRL-Lab/Wandb_Tutorial)对于wandb的介绍，这里由衷感谢他们的贡献!
+- 上面的教程按照基础使用、超参数搜索、数据和模型管理、wandb本地部署四个方向展开，此教程中不会复制项目中的代码，仅标注重点代码部分和基于此的注解
+- 第一部分是基础使用，这里介绍了如何用法wandb可视化训练曲线、图片、视频、matplotlib画图、表格、多进程group、html和Pytorch集成。  
+  代码中的一些细节：使用``from patalib import Path``和``run_dir = Path("../results") / all_args.project_name / all_args.experiment_name``简洁地指定wandb.init中的"dir"参数；使用``socket.gethostname()``作为wandb.init中的"help"参数充当实验注释
 
 ## Common Pitfalls
 - 避坑指南 + 解决方案
@@ -23,4 +26,3 @@
 - wandb官方示例库：[https://github.com/wandb/examples](https://github.com/wandb/examples)
 - wand官方教学资料：[https://github.com/wandb/edu](https://github.com/wandb/edu)
 - 知乎wandb使用教程：[https://www.zhihu.com/column/c_1494418493903155200](https://www.zhihu.com/column/c_1494418493903155200),与其配套的github项目：[https://github.com/OpenRL-Lab/Wandb_Tutorial](https://github.com/OpenRL-Lab/Wandb_Tutorial)
-- 
