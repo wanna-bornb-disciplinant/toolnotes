@@ -110,8 +110,8 @@
   ```
 
 - loguru内置多个核心日志级别(从低到高)，对应不同场景，用法完全一致(仅语义和颜色不同):    
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logger.trace() 最详细的调试信息（比如函数调用栈）    
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logger.debug() 调试信息（比如参数值、中间结果）  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logger.trace() 最详细的调试信息（用于追踪程序的每一步执行，例如函数调用、变量变化、循环迭代和一些复杂过程的执行流程）    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logger.debug() 调试信息（用于排查中间计算的问题，输出关键参数、中间结果、函数返回值）  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logger.info() 正常运行信息（比如训练开始 / 结束）  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logger.success() 操作成功（比如模型保存、训练完成）  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logger.warning() 警告（比如参数过时、资源不足）  
