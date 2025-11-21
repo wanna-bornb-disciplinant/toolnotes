@@ -145,6 +145,7 @@
   
 - loguru中logger.add()的细节：  
   logger.add() 是 loguru 最核心的配置函数，用于指定日志 “输出到哪里”“怎么存”“格式是什么”，支持链式调用，一次可配置多个输出目标。
+  解释一下具体的一些参数：{level: <8}表示左对齐，空格补齐8个字符位，实际上是字符串的输出格式；{module}:{name}:{line}中{name}输出模块名(如果日志在主模块就会输出"__main__"，如果日志在xx/xxx/xxxx.py这样的子模块下，那么就会输出"xx/xxx/xxxx.py")，{function}输出函数名，{line}输出具体哪一行，{module}貌似用得不多
   ```python
     from loguru import logger
     import sys
