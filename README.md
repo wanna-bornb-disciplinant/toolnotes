@@ -94,6 +94,11 @@ Contributions are welcome! Whether you want to fix a typo, add a new tool guide,
 
 ---
 
+## 😄 Acknowledgements
+- We sincerely acknowledge the original authors for their valuable contributions to the open-source community:  
+  [Wandb_Tutorial](https://github.com/OpenRL-Lab/Wandb_Tutorial)
+
+
 ## 📄 License
 
 This repository is licensed under the [MIT License](LICENSE). You are free to:
