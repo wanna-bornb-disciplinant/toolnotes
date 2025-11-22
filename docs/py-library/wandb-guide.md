@@ -82,6 +82,7 @@
   wandb.log({"html1": html1,"html2":html2})
   wandb.finish()
   ```
+  **多进程group代码**中的一些细节：
 - 第二部分是超参数搜索+基于Launchpad实现分布式超参搜索，超参搜索需要几个前提：定义好超参搜索空间
   
 
