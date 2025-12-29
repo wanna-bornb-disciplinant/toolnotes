@@ -9,7 +9,7 @@
   export WANDB_API_KEY=<your_api_key>
   ```
 - wandb是一个Python库，仅需``pip install wandb``即可安装
-- 使用前需在wandb官网注册一个账号，并获取账号的私钥，然后在bash等命令行终端中执行``wandb login``即可
+- 使用前需在wandb官网注册一个账号，并获取账号的私钥，然后在bash等命令行终端中执行``wandb login``或``python -m wandb login``即可
 - wandb管理实验和项目的单位是``team``和``project``
 
 ## Core Usage
