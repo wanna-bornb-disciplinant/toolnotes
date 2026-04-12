@@ -24,7 +24,7 @@ A complete index of all tools and modules documented in this repository. Organiz
 ## 🛠️ Secure Remote Connection Tools
 | Tool/Module               | Description                                  | File Path                                  |
 |---------------------------|----------------------------------------------|--------------------------------------------|
-| SSH(Secure Shell)         | Remote connection, key authentication, port forwarding & secure file transfer | [docs/sysadmin/ssh-guide.md](docs/sysadmin/ssh-guide.md) |
+| SSH(Secure Shell)         | Remote connection, key authentication, port forwarding & secure file transfer | [docs/remote/ssh-guide.md](docs/remote/ssh-guide.md) |
 
 ---
 
