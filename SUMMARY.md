@@ -4,47 +4,46 @@ A complete index of all tools and modules documented in this repository. Organiz
 
 ---
 
-## 🛠️ Development Tools
+## 🛠️ Code Management Tools
 | Tool/Module               | Description                                  | File Path                                  |
 |---------------------------|----------------------------------------------|--------------------------------------------|
 | Git & GitHub              | Commit specs, branch management, PR workflow | [docs/development/git-github-guide.md](docs/development/git-github-guide.md) |
-| VS Code                   | Plugins, shortcuts, custom configuration     | [docs/development/vs-code-guide.md](docs/development/vs-code-guide.md) |
-| Docker & Docker Compose   | Container deployment, common commands        | [docs/development/docker-guide.md](docs/development/docker-guide.md) |
-| IntelliJ IDEA             | Efficient usage, plugin recommendations      | [docs/development/intellij-idea-guide.md](docs/development/intellij-idea-guide.md) |
-| PyCharm                   | Python development workflow, debugging tips  | [docs/development/pycharm-guide.md](docs/development/pycharm-guide.md) |
 
 ---
 
-## 🛠️ Useful Third-party Libraries in Python
+## 🛠️ Useful Libraries in Python
 | Tool/Module               | Description                                  | File Path                                  |
 |---------------------------|----------------------------------------------|--------------------------------------------|
-| argparse+gin+loguru       | Command-line runtime control, structured config, logging | [docs/py-library/argparse-gin-loguru-guide.md](docs/py-library/argparse-gin-loguru-guide.md) |
+| gin+loguru       | Command-line runtime control, structured config, logging | [docs/py-library/argparse-gin-loguru-guide.md](docs/py-library/gin-loguru-guide.md) |
 | wandb                     | Experiment tracking, visualization & reproducibility     | [docs/py-library/wandb-guide.md](docs/py-library/wandb-guide.md) |
-
+|hydra||[docs/py-library/hydra-guide.md](docs/py-library/hydra-guide.md)|
+|lightning||[docs/py-library/lightning-guide.md](docs/py-library/lightning-guide.md)|
 
 ---
 
-## 🛠️ System Administration Tools
+## 🛠️ Secure Remote Connection Tools
 | Tool/Module               | Description                                  | File Path                                  |
 |---------------------------|----------------------------------------------|--------------------------------------------|
 | SSH(Secure Shell)         | Remote connection, key authentication, port forwarding & secure file transfer | [docs/sysadmin/ssh-guide.md](docs/sysadmin/ssh-guide.md) |
 
 ---
 
-## 🛠️ Shell Environments & Usage Tips
+## 🛠️ Terminal Tools
 | Tool/Module               | Description                                  | File Path                                  |
 |---------------------------|----------------------------------------------|--------------------------------------------|
-| Bash                      | Advanced built-in commands (grep/awk/sed), pipelines, scripting & aliases   | [docs/shell/bash-guide.md](docs/shell/bash-guide.md) |
-| PowerShell                | Cmdlets usage, object-oriented pipelines, scripting, cross-platform support | [docs/shell/powershell-guide.md](docs/shell/powershell-guide.md) |
-| CMD                       | Basic commands, batch scripting, system config & PowerShell compatibility   | [docs/shell/cmd-guide.md](docs/shell/cmd-guide.md) |
+| tmux|| [docs/sysadmin/ssh-guide.md](docs/terminal/tmux-guide.md) |
+| zsh||[docs/sysadmin/ssh-guide.md](docs/terminal/zsh-guide.md)|
+|oh-my-zsh||[docs/sysadmin/ssh-guide.md](docs/terminal/oh-my-zsh-guide.md)|
+|ghostty||[docs/sysadmin/ssh-guide.md](docs/terminal/ghostty-guide.md)|
 
+---
 
 
 
 ## 📈 Progress Tracker
 - Total documented tools: x
 - Categories covered: x
-- Last updated: 2025-11-07
+- Last updated: 2026-04-12
 - [Request a new tool guide](https://github.com/wanna-bornb-disciplinant/toolnotes/issues/new?title=Request:+[Tool+Name]+Guide) | [Report outdated content](https://github.com/wanna-bornb-disciplinant/toolnotes/issues/new?title=Update:+[Tool+Name]+Guide)
 
 ---
