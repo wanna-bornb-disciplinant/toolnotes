@@ -31,10 +31,10 @@ A complete index of all tools and modules documented in this repository. Organiz
 ## 🛠️ Terminal Tools
 | Tool/Module               | Description                                  | File Path                                  |
 |---------------------------|----------------------------------------------|--------------------------------------------|
-| tmux|| [docs/sysadmin/ssh-guide.md](docs/terminal/tmux-guide.md) |
-| zsh||[docs/sysadmin/ssh-guide.md](docs/terminal/zsh-guide.md)|
-|oh-my-zsh||[docs/sysadmin/ssh-guide.md](docs/terminal/oh-my-zsh-guide.md)|
-|ghostty||[docs/sysadmin/ssh-guide.md](docs/terminal/ghostty-guide.md)|
+| tmux|| [docs/terminal/tmux-guide.md](docs/terminal/tmux-guide.md) |
+| zsh||[docs/terminal/zsh-guide.md](docs/terminal/zsh-guide.md)|
+|oh-my-zsh||[docs/terminal/oh-my-zsh-guide.md](docs/terminal/oh-my-zsh-guide.md)|
+|ghostty||[docs/terminal/ghostty-guide.md](docs/terminal/ghostty-guide.md)|
 
 ---
 
