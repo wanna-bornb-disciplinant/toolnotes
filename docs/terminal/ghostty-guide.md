@@ -56,11 +56,129 @@
         ```
 - 如果是本地windows+ssh远程连接linux服务器的方案，仅需在linux中安装zsh + oh-my-zsh + tmux即可，本地安装的ghostty或类似原始的windows terminal功能够强大
 
-- ubuntu安装：
+- ubuntu安装(如果你的本地环境就是linux，请自己去安装ghostty)：
+  - 保证apt正常：
+    ```bash
+      sudo apt update
+      sudo apt upgrade -y
+    ```
+  - 安装zsh:
+    ```bash
+      sudo apt install -y zsh
+      zsh --version
+    ```
+  - 切换为zsh:
+    ```bash
+      chsh -s "$(which zsh)"
+    ```
+    - 这里有一些具体的实现细节，例如如果你的运行环境是docker的容器，则配置只会在当前的容器中生效，同时docker exec的指令就要相应的做出一些更改：例如/bin/bash改为zsh
+  - 检查切换是否正确：
+    ```bash
+      echo $SHELL 
+    ```
+    - 输出类似zsh之类的信息即启动成功
+  - 安装oh-my-zsh:
+    ```bash
+      sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+  - 安装tmux：
+    ```bash
+      apt install -y tmux
+    ```
   - 
 
 ## Core Usage
-- 
+- ghostty的settings可以打开config文件，可以个性化定制
+  - 以下是一位知乎答主的个人配置，仅限mac使用：
+    ```bash
+      === 字体 ===
+      font-family = JetBrainsMonoNerdFont
+      font-size = 14
+      font-thicken = true
+      adjust-cell-height = 2
+      
+      
+      === 主题 ===
+      跟随系统自动切换明暗主题
+      theme = light:Catppuccin Latte,dark:Catppuccin Mocha
+      
+      
+      === 窗口 ===
+      background-opacity = 0.9
+      background-blur-radius = 20
+      macos-titlebar-style = transparent
+      window-padding-x = 10
+      window-padding-y = 8
+      window-save-state = always
+      window-theme = auto
+      
+      
+      === 光标 ===
+      cursor-style = bar
+      cursor-style-blink = true
+      cursor-opacity = 0.8
+      
+      
+      === 鼠标 ===
+      mouse-hide-while-typing = true
+      copy-on-select = clipboard
+      
+      
+      === 下拉终端（Quake 风格） ===
+      quick-terminal-position = top
+      quick-terminal-screen = mouse
+      quick-terminal-autohide = true
+      quick-terminal-animation-duration = 0.15
+      
+      
+      === 安全 ===
+      clipboard-paste-protection = true
+      clipboard-paste-bracketed-safe = true
+      
+      
+      === Shell 集成 ===
+      shell-integration = detect
+      
+      
+      === 快捷键 ===
+      标签页
+      keybind = cmd+t=new_tab
+      keybind = cmd+shift+left=previous_tab
+      keybind = cmd+shift+right=next_tab
+      keybind = cmd+w=close_surface
+      
+      
+      分屏
+      keybind = cmd+d=new_split:right
+      keybind = cmd+shift+d=new_split:down
+      keybind = cmd+alt+left=goto_split:left
+      keybind = cmd+alt+right=goto_split:right
+      keybind = cmd+alt+up=goto_split:top
+      keybind = cmd+alt+down=goto_split:bottom
+      
+      
+      字体大小
+      keybind = cmd+plus=increase_font_size:1
+      keybind = cmd+minus=decrease_font_size:1
+      keybind = cmd+zero=reset_font_size
+      
+      
+      全局热键：下拉终端
+      keybind = global:ctrl+grave_accent=toggle_quick_terminal
+      
+      
+      分屏管理
+      keybind = cmd+shift+e=equalize_splits
+      keybind = cmd+shift+f=toggle_split_zoom
+      
+      
+      重载配置
+      keybind = cmd+shift+comma=reload_config
+      
+      
+      === 性能 ===
+      scrollback-limit = 25000000
+    ```
 
 ## Common Pitfalls
 - 避坑指南 + 解决方案
