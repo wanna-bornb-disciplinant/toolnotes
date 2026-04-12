@@ -18,29 +18,6 @@ All notes are written in plain Markdown for cross-platform compatibility and eas
 
 ## 📚 Covered Tools & Modules
 
-### Development Tools
-- Git & GitHub (commit规范、branch管理、PR流程)
-- VS Code (插件推荐、快捷键、自定义配置)
-- Docker & Docker Compose (容器部署、常用命令)
-- ...
-
-### System Administration Tools
-- SSH （远程连接、密钥认证、端口转发、安全文件传输）
-- ...
-
-### Useful Third-party Libraries in Python
-- logging/loguru
-- argparse
-- gin
-- wandb
-- ...
-
-### Shell Environments & Usage Tips
-- Bash
-- PowerShell
-- CMD
-- ...
-
 > See the [Table of Contents](SUMMARY.md) or [directory](docs/) for the full list of notes.
 
 ---
