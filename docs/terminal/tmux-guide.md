@@ -175,7 +175,7 @@
         ```
       - 调整pane大小：
         ```bash
-          prefix + "按住+" 方向键
+          长按prefix + 方向键
         ```
     - 什么时候用windows，什么时候用panes：
       - windows类似浏览器的tab,相互切换，真正分开的是pane
