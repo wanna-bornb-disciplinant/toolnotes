@@ -121,6 +121,65 @@
       ```bash
         export TERM=xterm-256color
       ```
+- **使用说明**：
+  - 使用名字命名会话会方便attach
+    ```bash
+      tmux new -s <session-name>    #上面命令新建一个指定名称的会话。
+    ```
+  - 主动分离会话(一般来说ssh断联、exit主动退出、终端窗口被关闭都是被动分离)：
+    ```bash
+      tmux detach
+    ```
+  - 查看所有会话：
+    ```bash
+      tmux ls
+    ```
+  - 接入某个之前分离的会话：
+    ```bash
+      tmux attach -t xxxx
+    ```
+  - 杀死某个具体的会话：
+    ```bash
+      tmux kill-session -t xxxx
+    ```
+  - 切换会话：
+    ```bash
+      tmux switch -t xxxx
+    ```
+  - **核心操作**：
+    - 所有快捷键都基于prefix（tmux默认是ctrl+b，oh-my-tmux中添加了ctrl+a）
+    - 关闭当前pane用``ctrl+d``，关闭当前window可以关掉window上的全部pane，也可以``prefix+&``
+    - 窗口相关：
+      - 新建窗口：
+        ```bash
+          prefix + c
+        ```
+      - 切换窗口：
+        ```bash
+          prefix + p(previous)
+          prefix + n(next)
+          prefix + number(id)
+        ```
+    - pane（分屏）相关：
+      - 横向分屏：
+        ```bash
+          prefix + "
+        ```
+      - 纵向分屏：
+        ```bash
+          prefix + %
+        ```
+      - 切换pane:
+        ```bash
+          prefix + 方向键
+        ```
+      - 调整pane大小：
+        ```bash
+          prefix + "按住+" 方向键
+        ```
+    - 什么时候用windows，什么时候用panes：
+      - 如果需要同时监控，就开panes，如果需要一定隔离属于不同的任务，就开windows
+    
 
 ## Common Pitfalls
 - 避坑指南 + 解决方案
