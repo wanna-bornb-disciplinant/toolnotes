@@ -48,7 +48,7 @@ All guides follow a unified format for consistency:
 4. **Common Pitfalls** → 避坑指南 + 解决方案
 5. **Useful Resources** → 官方文档、推荐教程、插件链接
 
-> Example: See [VS Code Guide](docs/editor/vs-code-guide.md) for a complete demo.
+> Example: See [tmux-guide](docs/terminal/tmux-guide.md) for a complete demo.
 
 ---
 
