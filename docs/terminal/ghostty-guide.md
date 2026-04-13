@@ -6,7 +6,7 @@
 ## Installation & Setup
 - 事先明确一点，ghostty作为终端模拟器，你装在本地电脑上看到的就是ghostty，当使用ssh连接远程服务器工作时，终端模拟器是工作在本地环境中的，这是ghostty和类似tmux zsh等终端工具都不同的一点
 
-- **如果在远程服务器上配置下面的终端工具+docker容器的工作模式，遇到一些诸如shell等的问题最好的解决方式就是直接重写dockerfile来规避**
+- **如果在远程服务器上配置下面的终端工具+docker容器的工作模式，遇到一些诸如shell等的问题最好的解决方式就是直接重写dockerfile来规避，terminal目录中提供了类似的创建流程**
 
 - mac安装：
   - 首先确定mac os的系统高于MACOS 13，否则无法正常安装运行
@@ -59,6 +59,7 @@
 - 如果是本地windows+ssh远程连接linux服务器的方案，仅需在linux中安装zsh + oh-my-zsh + tmux即可，本地安装的ghostty或类似原始的windows terminal功能够强大
 
 - ubuntu安装(如果你的本地环境就是linux，请自己去安装ghostty)：
+  - 如果在容器中不是root权限，在切换到root权限运行下列指令的时候，注意要修改真实使用用户的配置文件，root和普通用户的配置文件是独立的
   - 保证apt正常：
     ```bash
       sudo apt update
@@ -76,7 +77,7 @@
     - 这里有一些具体的实现细节，例如如果你的运行环境是docker的容器，则配置只会在当前的容器中生效，同时docker exec的指令就要相应的做出一些更改：例如/bin/bash改为zsh
   - 检查切换是否正确：
     ```bash
-      echo $SHELL 
+      cat /etc/passwd | grep xxxx(用户名) 
     ```
     - 输出类似zsh之类的信息即启动成功
   - 安装oh-my-zsh:
@@ -87,8 +88,7 @@
     ```bash
       apt install -y tmux
     ```
-  - 
-
+    
 ## Core Usage
 - ghostty的settings可以打开config文件，可以个性化定制
   - 以下是一位知乎答主的个人配置，仅限mac使用：
