@@ -117,6 +117,10 @@
           set -g default-shell /usr/bin/zsh
           set -g default-command /usr/bin/zsh
         ```
+    - 如果打开tmux出现乱码，有可能是TERM的问题，可以检查tmux内外的$TERM是否相同,通常是外部版本过老，在外部的.zshrc中修改TERM，类似：
+      ```bash
+        export TERM=xterm-256color
+      ```
 
 ## Common Pitfalls
 - 避坑指南 + 解决方案
