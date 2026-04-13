@@ -6,6 +6,8 @@
 ## Installation & Setup
 - 事先明确一点，ghostty作为终端模拟器，你装在本地电脑上看到的就是ghostty，当使用ssh连接远程服务器工作时，终端模拟器是工作在本地环境中的，这是ghostty和类似tmux zsh等终端工具都不同的一点
 
+- **如果在远程服务器上配置下面的终端工具+docker容器的工作模式，遇到一些诸如shell等的问题最好的解决方式就是直接重写dockerfile来规避**
+
 - mac安装：
   - 首先确定mac os的系统高于MACOS 13，否则无法正常安装运行
   - mac中默认的shell是zsh
