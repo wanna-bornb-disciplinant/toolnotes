@@ -101,6 +101,22 @@
         conda
       )
     ```
+- zsh-autosuggestions和zsh-syntax-highlighting作为非常实用的功能，可以添加进入plugins
+  - 安装 autosuggestions 插件
+    ```bash
+      git clone https://github.com/zsh-users/zsh-autosuggestions \
+      ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    ```
+  - 安装 syntax-highlighting 插件
+    ```bash
+      git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
+      ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    ```
+  - 检查是否有新的两个插件存在：
+    ```bash
+      ls ~/.oh-my-zsh/custom/plugins
+    ```
+  - 在.zshrc中添加插件名字
 
 ## Common Pitfalls
 - 避坑指南 + 解决方案
