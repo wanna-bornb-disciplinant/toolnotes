@@ -90,7 +90,17 @@
     ```
 
 ## Core Usage
-- 高频操作 + 快捷键 + 实用技巧
+- oh-my-zsh中很多主题，常见的有"robbyrussell" "agnoster" "powerlevel10k"，可以在.zshrc中更换
+
+- 如果需要oh-my-tmux和oh-my-zsh配合使用，可以让oh-my-zsh专门围绕git conda 路径等进行可视化
+  - 更改插件：
+    ```bash
+      plugins=(
+        git
+        docker
+        conda
+      )
+    ```
 
 ## Common Pitfalls
 - 避坑指南 + 解决方案
