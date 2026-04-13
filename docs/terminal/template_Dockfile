@@ -1,0 +1,61 @@
+# ================================
+# 1️⃣ 基础镜像（自带 CUDA + PyTorch）
+# ================================
+FROM nvcr.io/nvidia/pytorch:24.09-py3
+
+# ================================
+# 2️⃣ 基础环境
+# ================================
+WORKDIR /workspace
+USER root
+
+# （可选）换 apt 源（清华）
+RUN sed -i 's@archive.ubuntu.com@mirrors.tuna.tsinghua.edu.cn@g; \
+            s@security.ubuntu.com@mirrors.tuna.tsinghua.edu.cn@g; \
+            s@ports.ubuntu.com@mirrors.tuna.tsinghua.edu.cn@g' /etc/apt/sources.list || true
+
+# 避免 apt 交互卡死
+ENV DEBIAN_FRONTEND=noninteractive
+
+# 安装常用工具
+RUN apt-get update && apt-get install -y \
+    zsh \
+    tmux \
+    git \
+    curl \
+    wget \
+    vim \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+# ================================
+# 3️⃣ 创建普通用户
+# ================================
+ARG NB_USER=ethan
+ARG NB_UID=1003
+ARG NB_GID=1003
+
+RUN groupadd --gid ${NB_GID} ${NB_USER} && \
+    useradd --uid ${NB_UID} --gid ${NB_GID} -m ${NB_USER} && \
+    chown -R ${NB_UID}:${NB_GID} /workspace
+
+# ================================
+# 4️⃣ 切换用户
+# ================================
+USER ${NB_USER}
+WORKDIR /workspace
+
+# ================================
+# 5️⃣ 用户级配置（关键）
+# ================================
+
+# tmux 默认 shell 使用 zsh
+RUN echo "set-option -g default-shell /bin/zsh" >> ~/.tmux.conf
+
+# 创建一个基础 zsh 配置（避免首次提示）
+RUN echo "# basic zsh config" > ~/.zshrc
+
+# ================================
+# 6️⃣ 默认进入 zsh
+# ================================
+CMD ["/bin/zsh"]
