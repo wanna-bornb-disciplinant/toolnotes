@@ -98,7 +98,25 @@
     ```
 
 ## Core Usage
-- 高频操作 + 快捷键 + 实用技巧
+- 可以配合oh-my-tmux使用
+  - 安装：
+    - 安装指令：
+      ```bash
+        cd ~
+        git clone https://github.com/gpakosz/.tmux.git
+        ln -s -f .tmux/.tmux.conf
+        cp .tmux/.tmux.conf.local .
+      ```
+    - 强制tmux使用之前配置的个性化zsh:
+      - 打开当前用户的tmux配置文件：
+        ```bash
+          vim ~/.tmux.conf.local
+        ```
+      - 添加限制：
+        ```bash
+          set -g default-shell /usr/bin/zsh
+          set -g default-command /usr/bin/zsh
+        ```
 
 ## Common Pitfalls
 - 避坑指南 + 解决方案
