@@ -91,6 +91,7 @@
 
 ## Core Usage
 - oh-my-zsh中很多主题，常见的有"robbyrussell" "agnoster" "powerlevel10k"，可以在.zshrc中更换
+  - powerlevel10k是常见的三个中最好玩的，但需要单独安装
 
 - 如果需要oh-my-tmux和oh-my-zsh配合使用，可以让oh-my-zsh专门围绕git conda 路径等进行可视化
   - 更改插件：
