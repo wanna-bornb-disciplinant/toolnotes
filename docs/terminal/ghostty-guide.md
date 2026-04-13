@@ -44,7 +44,7 @@
   - 截止目前，在mac中安装了上述四个工具，tmux是显式调用，zsh是mac的默认shell，其余的工具需要默认使用
     - ghostty安装成功后会类似一个应用程序出现在访达中
     - 从ghostty中启动shell，如果在zsh中能看到git分支、路径高亮和彩色提示，就说明oh-my-zsh已经成功运行
-    - 接下来是默认使用tmux：
+    - 接下来是默认使用tmux(!!!慎选，可以会和后续的一些配置发生冲突)：
       - 打开zsh配置文件
         ```bash
           nano ~/.zshrc
