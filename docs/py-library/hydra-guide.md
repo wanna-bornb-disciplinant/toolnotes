@@ -111,12 +111,12 @@
 
 ## Useful Resources（官方文档、推荐教程、插件链接）
 
-- 官方文档：![Hydra 主页](https://hydra.cc) | ![OmegaConf 文档](https://omegaconf.readthedocs.io/en/2.3_branch/)
+- 官方文档：[Hydra 主页](https://hydra.cc) | [OmegaConf 文档](https://omegaconf.readthedocs.io/en/2.3_branch/)
 - 入门教程：
 
-  - Hydra 官方教程（包含基础到高级）: ![https://hydra.cc/docs/tutorials/](https://hydra.cc/docs/tutorials/)
-  - 结构化配置详解：![https://hydra.cc/docs/advanced/structured_configs/](https://hydra.cc/docs/advanced/structured_configs/)
-  - 多运行与 Sweeper 插件：![https://hydra.cc/docs/plugins/optuna_sweeper/](https://hydra.cc/docs/plugins/optuna_sweeper/)
+  - Hydra 官方教程（包含基础到高级）: [https://hydra.cc/docs/tutorials/](https://hydra.cc/docs/tutorials/)
+  - 结构化配置详解：[https://hydra.cc/docs/advanced/structured_configs/](https://hydra.cc/docs/advanced/structured_configs/)
+  - 多运行与 Sweeper 插件：[https://hydra.cc/docs/plugins/optuna_sweeper/](https://hydra.cc/docs/plugins/optuna_sweeper/)
 - 推荐社区教程：
 
   - “Hydra 完全指南”系列（Medium）
