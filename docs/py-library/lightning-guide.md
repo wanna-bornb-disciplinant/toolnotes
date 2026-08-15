@@ -14,7 +14,7 @@
 - Hydra 中最关键的概念包括 `_target_`、`_partial_`、`defaults`、`${...}` 插值和 CLI override。`hydra.utils.instantiate()` 会根据 `_target_` 动态创建对象，因此 DataModule、LightningModule、Trainer、Callback、Logger 都可以配置化。
 - `@task_wrapper` 不是 Hydra 或 Lightning 官方装饰器，而是 `lightning-hydra-template` 自己定义的工程辅助装饰器。它通常在整个 `train()` / `evaluate()` 任务外层提供统一的 `try / except / finally` 逻辑，用于异常记录、输出目录提示和 W&B 等资源收尾。它比 Lightning Hook/Callback 所处的层级更高。
 
-## Installation & Setu
+## Installation & Setup
 
 - Lightning 常见安装方式：`pip install lightning`。现代代码通常使用 `import lightning as L`，并从 `lightning.pytorch` 中导入 Callback、Logger 等组件。
 - TorchMetrics 可安装为：`pip install torchmetrics`。分类任务推荐使用更明确的类，例如 `BinaryAccuracy`、`MulticlassAccuracy`，而不是依赖容易受版本变化影响的旧式泛化写法。
